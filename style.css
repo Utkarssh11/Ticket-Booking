@@ -1,0 +1,149 @@
+/* Roboto Font Family - Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 100px);
+}
+
+.container {
+    max-width: 100%;
+    width: 1000px;
+    margin: auto;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav .logo img {
+    width: 78px;
+}
+nav ul {
+    display: flex;
+    list-style:none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+}
+
+.selected {
+    font-style:inherit;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 17mm;
+}
+
+.left h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.9rem;
+    text-decoration: solid;
+    color: #ffffff;
+    text-align: start;
+    text-shadow: 0 10px 10px black;    
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form h1 {
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+form label {
+    margin: 7px;
+    font-size: 15px;
+}
+form input {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+form input:last-child {
+    background-color: #125e67;
+    width: 50%;
+    margin: 1rem auto;
+}
+
+/* Footer CSS */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer ul li strong {
+    color: #05bcd1;
+}
+
+/* Responsive */
+
+@media (max-width:700px) {
+    nav, nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px;
+    }
+    .content {
+        flex-direction: column;
+        width: 90%;
+        margin: 2rem auto;
+    }
+    form h2 {
+        text-align: center;
+    }
+}
